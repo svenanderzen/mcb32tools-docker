@@ -1,6 +1,7 @@
 ################################################################################
 #                                                                              #
-# Dockerfile for communicating with a ChipKit Uno32 board from a Docker        #
+# Docker buildfile specifying a container with the mcb32tools toolchain for    #
+# easy communication with the ChipKit Uno32                                    #
 # container.                                                                   #
 #                                                                              #
 # Instructions:                                                                #
@@ -13,6 +14,10 @@
 #    container.                                                                #
 #                                                                              #
 # Example command:                                                             #
+# Build the image                                                              #
+# docker build -t mcb32 .                                                      #
+#                                                                              #
+# Run the container                                                            #
 # docker run --interactive \                                                   #
 #            --tty \                                                           #
 #            --device=/dev/ttyUSB0 \                                           #
