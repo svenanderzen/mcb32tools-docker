@@ -8,8 +8,9 @@
 # 2. Start the container with this information. Be sure to specify a --device  #
 #    flag with the TTY information as well as to bind a working directory for  #
 #    the source code.                                                          #
-# 3. The container will be opened. Use docker start/stop to controll the       #
-#    container and attach to attach to the running shell inside the container. #
+# 3. The container will be opened. Run make / make install as usual.           #
+# 4. When you're done. Use docker start/stop as usual to control the           #
+#    container.                                                                #
 #                                                                              #
 # Example command:                                                             #
 # docker run --interactive \                                                   #
