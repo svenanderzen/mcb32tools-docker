@@ -3,7 +3,6 @@ Docker buildfile specifying a container with the **mcb32tools** toolchain for ea
 communication with the **ChipKit Uno32**.
 
 ## Instructions
-Instructions:
 1. Find out the TTY that the ChipKit Uno32 board is currently bound to (usually
    something like `/dev/ttyUSB0`).
 2. Start the container with this information. (See the command examples).
