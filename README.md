@@ -2,6 +2,9 @@
 Docker buildfile specifying a container with the **mcb32tools** toolchain for easy
 communication with the **ChipKit Uno32**.
 
+**NOTE**: *All credit and licensing regarding mcb32tools goes to their respective creators at:
+https://github.com/is1200-example-projects/mcb32tools/releases/*
+
 ## Instructions
 1. Find out the TTY that the ChipKit Uno32 board is currently bound to (usually
    something like `/dev/ttyUSB0`).
@@ -40,5 +43,3 @@ Short info about the arguments:
 #### Chained command for easy copy-paste-fu
 `docker run --interactive --tty --device=/dev/ttyUSB0 --volume "$PWD":/home --name mcb32tools mcb32`
 
-**NOTE**: *All credit and licensing regarding mcb32tools goes to their respective creators at:
-https://github.com/is1200-example-projects/mcb32tools/releases/*
