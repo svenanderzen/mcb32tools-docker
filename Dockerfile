@@ -12,7 +12,11 @@
 #    container and attach to attach to the running shell inside the container. #
 #                                                                              #
 # Example command:                                                             #
-# docker run -i -t --device=/dev/ttyUSB0 -v "$PWD":/home --name mcb32tools mcb #
+# docker run --interactive \                                                   #
+#            --tty \                                                           #
+#            --device=/dev/ttyUSB0 \                                           #
+#            --volume "$PWD":/home \                                           #
+#            --name mcb32tools mcb32                                           #
 #                                                                              #
 # *NOTE: All credit and licensing regarding mcb32tools goes to their           #
 # respective creators.                                                         #
